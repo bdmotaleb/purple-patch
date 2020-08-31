@@ -1,0 +1,131 @@
+body {
+    background: #d6e6f4;
+}
+
+.ads {
+    width: 300px;
+    position: relative;
+    margin: 188px auto 0;
+}
+
+.logo, .tagline, .tagline-2, .product, .click, .model, .buy-now {
+    position: absolute;
+}
+
+.logo {
+    top: 6px;
+    right: 6px;
+}
+
+.tagline {
+    top: 46px;
+    left: 9px;
+}
+
+.tagline-2 {
+    display: none;
+    top: 46px;
+    left: 9px;
+}
+
+.product {
+    z-index: 9999;
+    cursor: pointer;
+    top: 105px;
+    left: 75px;
+}
+.after-product {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    cursor: pointer;
+    top: 105px;
+    left: 75px;
+}
+.click {
+    animation: pulse 2s linear infinite;
+}
+
+.buy-now {
+    left: 40px;
+    bottom: 10px;
+}
+
+.model {
+    right: -1px;
+    bottom: -1px;
+}
+
+.hide-animation {
+    animation: hide 3s linear;
+}
+
+.clear-face, .buy-now {
+    display: none;
+}
+
+.after .tagline, .after .click {
+    display: none;
+}
+
+.after .tagline-2, .after .buy-now {
+    display: block;
+}
+
+.after .product {
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.after .after-product {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+@keyframes pulse {
+    0% {
+        left: 135px;
+        bottom: 42px;
+    }
+    50% {
+        left: 122px;
+        bottom: 48px;
+    }
+
+    100% {
+
+        left: 135px;
+        bottom: 42px;
+    }
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: .6;
+    }
+    30% {
+        opacity: .4;
+    }
+    40% {
+        opacity: .2;
+    }
+    50% {
+        opacity: .1;
+    }
+    60% {
+        opacity: .3;
+    }
+    70% {
+        opacity: .5;
+    }
+    80% {
+        opacity: .7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
